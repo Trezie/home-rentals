@@ -1,6 +1,6 @@
 import './Landingpage.css';
 import Navbar from '../Components/Navbar/Navbar';
-
+import MyComponent from '../Components/Map/Reactmap'
 
 const Landingpage = () => {
   return (
@@ -12,6 +12,7 @@ const Landingpage = () => {
             <h1>
               The most affortable place to stay in the san franciso bay area
             </h1>
+            <MyComponent />
        </section>
     </div>
   )
