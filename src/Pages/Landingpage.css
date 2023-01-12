@@ -1,0 +1,9 @@
+.hero-section{
+    background-image: url('../Assets/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: overlay; */
+    /* background-color: rgba(255, 132, 0, 0.363); */
+    height: 100vh;
+    padding: 0 2rem;
+}
