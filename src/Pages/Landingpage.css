@@ -1,9 +1,78 @@
+.landing-page{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
 .hero-section{
     background-image: url('../Assets/hero-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-blend-mode: overlay; */
-    /* background-color: rgba(255, 132, 0, 0.363); */
     height: 100vh;
-    padding: 0 2rem;
+    padding: 0 3rem;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.hero-content h1{
+    color: #ffffff;
+    width: 33rem;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 70px;
+}
+
+.select-div{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ffffff;
+    margin-top: 1rem;
+
+}
+
+.select-div select{
+    background-color: #E6E6E6;
+    padding: 1.15rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    border: 1px solid #E6E6E6;
+    
+}
+
+#alltypes{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.select-div button{
+    padding: 1rem;
+    background-color: #23A6F0;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #23A6F0;
+    cursor: pointer;
+}
+
+.mapcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.costcard-subcont, .costcard-div, .costcard-div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costcard-div{
+    flex-direction: column;
 }

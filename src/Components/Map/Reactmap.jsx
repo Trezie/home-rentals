@@ -5,13 +5,14 @@ import { memo } from 'react';
 
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '300px',
+  height: '300px',
+  borderRadius: '15px'
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 6.601,
+  lng: 3.351
 };
 
 function MyComponent() {
@@ -39,7 +40,7 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={20}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
