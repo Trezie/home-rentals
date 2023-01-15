@@ -1,6 +1,8 @@
 import './Landingpage.css';
+import { useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import MyComponent from '../Components/Map/Reactmap';
+import Propertycard from '../Components/Propertycard/Propertycard';
 import searchicon from '../Assets/searchicon.svg';
 import costImage from '../Assets/cost-image.svg';
 import community from '../Assets/community.svg';
@@ -10,10 +12,34 @@ import Costcard from '../Components/Costcard/Costcard';
 import plant from '../Assets/plant.svg';
 import eye from '../Assets/eye.svg';
 import shield from '../Assets/shield.svg';
-import Propertycard from '../Components/Propertycard/Propertycard';
+import cardpic1 from '../Assets/cardpic1.svg';
 
 
 const Landingpage = () => {
+
+  const [myProperty] = useState([
+     { Image: cardpic1, price: '$1200'},
+     { Image: cardpic1, price: '$1300'},
+     { Image: cardpic1, price: '$1000'},
+     { Image: cardpic1, price: '$1400'},
+     { Image: cardpic1, price: '$1900'},
+     { Image: cardpic1, price: '$1900'},
+     { Image: cardpic1, price: '$2200'},
+     { Image: cardpic1, price: '$1200'},
+     { Image: cardpic1, price: '$2000'},
+     { Image: cardpic1, price: '$1000'},
+     { Image: cardpic1, price: '$1200'},
+     { Image: cardpic1, price: '$1100'},
+     { Image: cardpic1, price: '$1200'},
+     { Image: cardpic1, price: '$1400'},
+     { Image: cardpic1, price: '$1100'},
+     { Image: cardpic1, price: '$1300'},
+     { Image: cardpic1, price: '$1200'},
+     { Image: cardpic1, price: '$1700'} 
+
+  ])
+
+
   return (
     <div className='landing-page'>
        <section className='hero-section'>
@@ -62,7 +88,13 @@ const Landingpage = () => {
             <h3><span>List</span> Of Properties</h3>
             <button>View All Property</button>
           </div>
-          <Propertycard />
+          <div className='pCard-container'>
+
+            {myProperty.map((item) => (
+              <Propertycard apptImg={item.Image} apptPrice={item.price}/>
+            ))}
+          </div>
+
        </section>
     </div>
   )
