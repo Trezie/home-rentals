@@ -64,7 +64,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+}
+
+
+.section2{
+    padding: 3rem;
+}
+
+.section2 h2{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+}
+
+.section2 span{
+    border-bottom: 3px solid #F4511E;
 }
 
 .costcard-subcont, .costcard-div, .costcard-div div {
@@ -73,6 +87,47 @@
     align-items: center;
 }
 
+.costcard-subcont{
+    justify-content: space-evenly;
+}
+
+.costimg{
+    height: 33rem;
+}
 .costcard-div{
     flex-direction: column;
+}
+
+.costcard-div div{
+    margin: 1rem 0;
+}
+
+.section3{
+    padding: 2rem 3rem;
+    background: #F5F5F5;
+}
+
+.sect3-heading h3{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+}
+
+.sect3-heading span{
+    border-bottom: 3px solid #F4511E;
+}
+
+.sect3-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect3-heading button{
+    padding: 1rem 1.25rem;
+    color: #ffffff;
+    background-color: #F4511E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

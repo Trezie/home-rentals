@@ -10,6 +10,7 @@ import Costcard from '../Components/Costcard/Costcard';
 import plant from '../Assets/plant.svg';
 import eye from '../Assets/eye.svg';
 import shield from '../Assets/shield.svg';
+import Propertycard from '../Components/Propertycard/Propertycard';
 
 
 const Landingpage = () => {
@@ -38,10 +39,10 @@ const Landingpage = () => {
 
             </div>
        </section>
-       <section>
-        <h2><span>Minimum Living Cost</span>Takes Care Of Everything</h2>
+       <section className='section2'>
+        <h2><span>Minimum Living Cost</span> Takes Care Of Everything</h2>
         <div className='costcard-subcont' >
-          <img src={costImage} alt="cost-image" />
+          <img src={costImage} alt="cost" className='costimg' />
           <div className='costcard-div'  >
             <div>
               <Costcard imgsrc={dollar} content={"Pay as Little as possible!"} imgalt={"dollar-icon"}/>
@@ -54,8 +55,14 @@ const Landingpage = () => {
               <Costcard imgsrc={eye} content={"Pay for what you use!"} imgalt={"eye-icon"}/>
             </div>
           </div>
-
         </div>
+       </section>
+       <section className='section3'>
+          <div className='sect3-heading'>
+            <h3><span>List</span> Of Properties</h3>
+            <button>View All Property</button>
+          </div>
+          <Propertycard />
        </section>
     </div>
   )

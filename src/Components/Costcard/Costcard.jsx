@@ -6,6 +6,7 @@ const Costcard = ({imgsrc, content, imgalt}) => {
         <div>
             <img src={imgsrc} alt={imgalt} />
         </div>
+        
         <p>{content}</p>
     </div>
   )
