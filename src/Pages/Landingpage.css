@@ -132,6 +132,101 @@
     cursor: pointer;
 }
 
-/* .pagination-div{
-    margin: 1.5rem 0;
-} */
+.sect3-heading button:hover{
+    background-color: white;
+    color: #F4511E;
+    border: 2px solid #F4511E;
+    font-weight: 600;
+}
+
+.section4{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-minidiv{
+    display: flex;
+}
+
+.flex-minidiv p{
+    font-weight: 600;
+    color: white;
+    font-size: 1.25rem;
+    width: 12rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flex-subdiv1, .flex-subdiv2, .flex-subdiv3, .flex-subdiv4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.flex-subdiv1{
+    background-image: url('../Assets/flexbackgrnd1.svg');
+    width: 250px;
+    height: 334px;
+
+}
+.flex-subdiv2{
+    background-image: url('../Assets/flexbackgrnd2.svg');
+    width: 270px;
+    height: 270px;
+    align-self: flex-end;
+}
+
+.flex-subdiv3{
+    background-image: url('../Assets/flexbackgrnd3.svg');
+    width: 212px;
+    height: 285px;
+}
+
+.flex-subdiv4{
+    background-image: url('../Assets/flexbackgrnd4.svg');
+    width: 338px;
+    height: 356px;
+}
+
+.flex-div2{
+    padding: 2rem;
+}
+
+.flex-div2 h4{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #18191F;
+    width: 28rem;
+}
+
+.flex-div2 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 1rem 0;
+    width: 28rem;
+}
+
+.flex-div2 button{
+    padding: 1rem 1.5rem;
+    background-color: #F4511E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.flex-div2 button:hover{
+    background-color: white;
+    color: #F4511E;
+    border: 2px solid #F4511E;
+    font-weight: 600;
+}

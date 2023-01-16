@@ -1,8 +1,7 @@
 import './Landingpage.css';
-import { useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import MyComponent from '../Components/Map/Reactmap';
-import Propertycard from '../Components/Propertycard/Propertycard';
+import MyPagination from '../Components/MyPagination/MyPagination';
 import searchicon from '../Assets/searchicon.svg';
 import costImage from '../Assets/cost-image.svg';
 import community from '../Assets/community.svg';
@@ -12,44 +11,11 @@ import Costcard from '../Components/Costcard/Costcard';
 import plant from '../Assets/plant.svg';
 import eye from '../Assets/eye.svg';
 import shield from '../Assets/shield.svg';
-import cardpic1 from '../Assets/cardpic1.svg';
-import cardpic2 from '../Assets/cardpic2.svg';
-import cardpic3 from '../Assets/cardpic3.svg';
-import cardpic4 from '../Assets/cardpic4.svg';
-import cardpic5 from '../Assets/cardpic5.svg';
-import cardpic6 from '../Assets/cardpic6.svg';
-import MyPagination from '../Components/MyPagination/MyPagination';
+import Propertyform from '../Components/Propertyform/Propertyform';
 
 
 const Landingpage = () => {
 
-
-
-
-
-
-
-  const [myProperty] = useState([
-     { Image: cardpic1, price: '$1200'},
-     { Image: cardpic2, price: '$1300'},
-     { Image: cardpic3, price: '$1000'},
-     { Image: cardpic4, price: '$1400'},
-     { Image: cardpic5, price: '$1900'},
-     { Image: cardpic6, price: '$1900'},
-     { Image: cardpic1, price: '$2200'},
-     { Image: cardpic2, price: '$1200'},
-     { Image: cardpic3, price: '$2000'},
-     { Image: cardpic4, price: '$1000'},
-     { Image: cardpic5, price: '$1200'},
-     { Image: cardpic6, price: '$1100'},
-     { Image: cardpic1, price: '$1200'},
-     { Image: cardpic2, price: '$1400'},
-     { Image: cardpic3, price: '$1100'},
-     { Image: cardpic4, price: '$1300'},
-     { Image: cardpic5, price: '$1200'},
-     { Image: cardpic6, price: '$1700'} 
-
-  ]);
 
 
   return (
@@ -100,10 +66,44 @@ const Landingpage = () => {
             <h3><span>List</span> Of Properties</h3>
             <button>View All Property</button>
           </div>
-          <div className='pagination-div' >
-
+          <div>
             <MyPagination itemsPerPage={6}/>
-      
+          </div>
+       </section>
+       <section className='section4'>
+          <div>
+            <div className='flex-minidiv'>
+              <div className='flex-subdiv1'>
+                <p>Flexible Leases</p>
+              </div>
+              <div className='flex-subdiv2'>
+                <p>7-Day Happiness Guaranteed</p>
+              </div>
+            </div>
+            <div className='flex-minidiv'>
+              <div className='flex-subdiv3'>
+                <p>Monthly House Cleaning</p>
+              </div>
+              <div className='flex-subdiv4'>
+                <p>Choose Your Own Roommate</p>
+              </div>
+            </div>
+          </div>
+          <div className='flex-div2'>
+            <h4>Flexibility and options to suit your lifestyle.</h4>
+            <p>
+              You need it? We got it. We make finding your next home 
+              easy, comfortable, and simple. From our happiness guarantee 
+              to our selective roommate finder option. We provide you the 
+              flexibility that you most desire.
+            </p>
+            <button>Search Rooms</button>
+          </div>
+       </section>
+       <section className='section5'>
+          <h5>Your property with us and be Confident that Your Room will be Filled Out!</h5>
+          <div>
+            <Propertyform />
           </div>
        </section>
     </div>
