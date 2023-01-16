@@ -13,31 +13,43 @@ import plant from '../Assets/plant.svg';
 import eye from '../Assets/eye.svg';
 import shield from '../Assets/shield.svg';
 import cardpic1 from '../Assets/cardpic1.svg';
+import cardpic2 from '../Assets/cardpic2.svg';
+import cardpic3 from '../Assets/cardpic3.svg';
+import cardpic4 from '../Assets/cardpic4.svg';
+import cardpic5 from '../Assets/cardpic5.svg';
+import cardpic6 from '../Assets/cardpic6.svg';
+import MyPagination from '../Components/MyPagination/MyPagination';
 
 
 const Landingpage = () => {
 
+
+
+
+
+
+
   const [myProperty] = useState([
      { Image: cardpic1, price: '$1200'},
-     { Image: cardpic1, price: '$1300'},
-     { Image: cardpic1, price: '$1000'},
-     { Image: cardpic1, price: '$1400'},
-     { Image: cardpic1, price: '$1900'},
-     { Image: cardpic1, price: '$1900'},
+     { Image: cardpic2, price: '$1300'},
+     { Image: cardpic3, price: '$1000'},
+     { Image: cardpic4, price: '$1400'},
+     { Image: cardpic5, price: '$1900'},
+     { Image: cardpic6, price: '$1900'},
      { Image: cardpic1, price: '$2200'},
+     { Image: cardpic2, price: '$1200'},
+     { Image: cardpic3, price: '$2000'},
+     { Image: cardpic4, price: '$1000'},
+     { Image: cardpic5, price: '$1200'},
+     { Image: cardpic6, price: '$1100'},
      { Image: cardpic1, price: '$1200'},
-     { Image: cardpic1, price: '$2000'},
-     { Image: cardpic1, price: '$1000'},
-     { Image: cardpic1, price: '$1200'},
-     { Image: cardpic1, price: '$1100'},
-     { Image: cardpic1, price: '$1200'},
-     { Image: cardpic1, price: '$1400'},
-     { Image: cardpic1, price: '$1100'},
-     { Image: cardpic1, price: '$1300'},
-     { Image: cardpic1, price: '$1200'},
-     { Image: cardpic1, price: '$1700'} 
+     { Image: cardpic2, price: '$1400'},
+     { Image: cardpic3, price: '$1100'},
+     { Image: cardpic4, price: '$1300'},
+     { Image: cardpic5, price: '$1200'},
+     { Image: cardpic6, price: '$1700'} 
 
-  ])
+  ]);
 
 
   return (
@@ -88,13 +100,11 @@ const Landingpage = () => {
             <h3><span>List</span> Of Properties</h3>
             <button>View All Property</button>
           </div>
-          <div className='pCard-container'>
+          <div className='pCard-container' >
 
-            {myProperty.map((item) => (
-              <Propertycard apptImg={item.Image} apptPrice={item.price}/>
-            ))}
+            <MyPagination itemsPerPage={6}/>
+      
           </div>
-
        </section>
     </div>
   )
