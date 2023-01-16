@@ -6,7 +6,7 @@ import bed from '../../Assets/bed.svg';
 const Propertycard = ({apptImg, apptPrice}) => {
   return (
     <div className='pcard-container'>
-        <div>
+        <div className='apptImg'>
             <img src={apptImg} alt="appt" />
         </div>
         <div className='pcard-content'>
@@ -20,7 +20,7 @@ const Propertycard = ({apptImg, apptPrice}) => {
                     <img src={bed} alt="bed" />
                     <p>4</p>
                 </div>
-                <div>
+                <div id='showerdiv'>
                     <img src={shower} alt="shower" />
                     <p>2</p>
                 </div>

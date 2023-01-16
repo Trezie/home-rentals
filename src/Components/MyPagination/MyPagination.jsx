@@ -1,47 +1,47 @@
+import './MyPagination.css';
 import { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
+import Propertycard from '../Propertycard/Propertycard';
 import cardpic1 from '../../Assets/cardpic1.svg';
 import cardpic2 from '../../Assets/cardpic2.svg';
 import cardpic3 from '../../Assets/cardpic3.svg';
 import cardpic4 from '../../Assets/cardpic4.svg';
 import cardpic5 from '../../Assets/cardpic5.svg';
 import cardpic6 from '../../Assets/cardpic6.svg';
-import Propertycard from '../Propertycard/Propertycard';
 
 
     // Example items, to simulate fetching from another resources.
 
 
     const myProperty = [
-    { Image: cardpic1, price: '$1200'},
-    { Image: cardpic2, price: '$1300'},
-    { Image: cardpic3, price: '$1000'},
-    { Image: cardpic4, price: '$1400'},
-    { Image: cardpic5, price: '$1900'},
-    { Image: cardpic6, price: '$1900'},
-    { Image: cardpic1, price: '$2200'},
-    { Image: cardpic2, price: '$1200'},
-    { Image: cardpic3, price: '$2000'},
-    { Image: cardpic4, price: '$1000'},
-    { Image: cardpic5, price: '$1200'},
-    { Image: cardpic6, price: '$1100'},
-    { Image: cardpic1, price: '$1200'},
-    { Image: cardpic2, price: '$1400'},
-    { Image: cardpic3, price: '$1100'},
-    { Image: cardpic4, price: '$1300'},
-    { Image: cardpic5, price: '$1200'},
-    { Image: cardpic6, price: '$1700'} 
+    { Image: cardpic1, price: '$1200', id: 1},
+    { Image: cardpic3, price: '$1100', id: 2},
+    { Image: cardpic5, price: '$1900', id: 3},
+    { Image: cardpic6, price: '$1900', id: 4},
+    { Image: cardpic2, price: '$1200', id: 5},
+    { Image: cardpic1, price: '$2200', id: 6},
+    { Image: cardpic3, price: '$1000', id: 7},
+    { Image: cardpic4, price: '$1000', id: 8},
+    { Image: cardpic3, price: '$2000', id: 9},
+    { Image: cardpic5, price: '$1200', id: 10},
+    { Image: cardpic1, price: '$1200', id: 11},
+    { Image: cardpic4, price: '$1400', id: 12},
+    { Image: cardpic6, price: '$1100', id: 13},
+    { Image: cardpic2, price: '$1400', id: 14},
+    { Image: cardpic5, price: '$1200', id: 15},
+    { Image: cardpic4, price: '$1300', id: 16},
+    { Image: cardpic2, price: '$1300', id: 17},
+    { Image: cardpic6, price: '$1700', id: 18} 
 
  ];
 
-
  function Property({currentProperty}) {
     return(
-        <>
+        <div className='pCard-container'>
             {currentProperty && currentProperty.map((item) => (
-                <Propertycard apptImg={item.Image} apptPrice={item.price}/>
+                <Propertycard key={item.id} apptImg={item.Image} apptPrice={item.price}/>
             ))}
-        </>
+        </div>
     )
  };
 
@@ -85,16 +85,15 @@ function MyPagination({ itemsPerPage }) {
 
 
   return (
-    <div>
-        {/* <Items currentItems={currentItems} /> */}
-        <Property currentProperty={currentProperty} />
+    <div className='paginateContainer'>
+      <Property currentProperty={currentProperty} />
       <ReactPaginate
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel="Next"
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel="Previous"
         renderOnZeroPageCount={null}
       />
     </div>

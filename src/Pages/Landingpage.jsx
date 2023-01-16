@@ -100,7 +100,7 @@ const Landingpage = () => {
             <h3><span>List</span> Of Properties</h3>
             <button>View All Property</button>
           </div>
-          <div className='pCard-container' >
+          <div className='pagination-div' >
 
             <MyPagination itemsPerPage={6}/>
       

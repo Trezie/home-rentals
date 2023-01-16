@@ -103,7 +103,7 @@
 }
 
 .section3{
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
     background: #F5F5F5;
 }
 
@@ -132,10 +132,6 @@
     cursor: pointer;
 }
 
-
-.pCard-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* .pagination-div{
+    margin: 1.5rem 0;
+} */

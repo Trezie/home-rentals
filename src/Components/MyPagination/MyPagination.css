@@ -1,0 +1,46 @@
+.pCard-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.paginateContainer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    color: #F4511E;
+    width: 19rem;
+    margin: 2rem auto;
+}
+
+.paginateContainer li{
+    padding: 1rem;
+    list-style: none;
+    border-left: 0.25px solid #BDBDBD;
+    border-right: 0.25px solid #BDBDBD;
+    cursor: pointer;
+}
+
+.paginateContainer .next{
+    border-right: none;
+}
+
+.paginateContainer .previous{
+    border-left: none;
+}
+
+.paginateContainer .selected{
+    color: white;
+    background-color: #F4511E;
+    border-color: #F4511E ;
+}
+
+.paginateContainer .disabled{
+    color: #BDBDBD;
+    background-color: #F3F3F3;
+    ;
+}
