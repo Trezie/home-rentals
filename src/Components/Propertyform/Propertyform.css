@@ -1,0 +1,60 @@
+.pForm-container{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 2rem auto;
+
+}
+
+.pForm-container h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #F4511E;
+    margin-bottom: 3rem;
+}
+
+.pForm-container span{
+    color: #F4511E;
+}
+
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-flex div, .descrpt-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.75rem;
+}
+
+.form-flex input, .form-flex select{
+    padding: 0.75rem;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.pForm-container label{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    color: #252B42;
+    margin-bottom: 0.5rem;
+}
+
+.descrpt-div textarea{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}

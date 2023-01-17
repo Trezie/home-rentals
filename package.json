@@ -12,6 +12,7 @@
     "react-key-index": "^0.1.1",
     "react-paginate": "^8.1.4",
     "react-scripts": "5.0.1",
+    "react-uploader": "^3.1.0",
     "web-vitals": "^2.1.4",
     "webpack": "^5.75.0"
   },
