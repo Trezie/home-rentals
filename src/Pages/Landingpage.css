@@ -243,3 +243,28 @@
     text-transform: capitalize;
 }
 
+
+.caro-div{
+    padding: 4rem;
+    background-color: rgba(244, 81, 30, 0.07);
+    position: relative;
+}
+
+.caro-div p{
+    text-align: left;
+    
+}
+
+#caro-pic{
+    width: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.4;
+}
+
+.section6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

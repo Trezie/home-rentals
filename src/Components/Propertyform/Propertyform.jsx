@@ -1,6 +1,9 @@
 import './Propertyform.css';
+import Dropzone from 'react-dropzone';
+
 
 const Propertyform = () => {
+
   return (
     <div className='pForm-container'>
         <h1>Add A New Property</h1>
@@ -65,8 +68,23 @@ const Propertyform = () => {
                 <label htmlFor="description">Description<span>*</span></label>
                 <textarea name="description" cols="30" rows="10" placeholder='Enter Description'></textarea>
             </div>
-
-            <button>Add New Property</button>
+            <div className='img-uploader-div'>
+                <label htmlFor="upload">Upload Photos<span>*</span></label>
+                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                    {({getRootProps, getInputProps}) => (
+                        <section className='img-uploader'>
+                            <div {...getRootProps()} >
+                                <input {...getInputProps()} />
+                                <p>Drag your images here, or <span>Browse</span></p>
+                                <p className='mini'>Supported:  JPG, JPEG, PNG</p>
+                            </div> 
+                        </section>
+                    )}
+                </Dropzone>
+            </div>
+            <div className='btn-holder'>
+                <button>Add New Property</button>
+            </div>
         </form>
     </div>
   )
