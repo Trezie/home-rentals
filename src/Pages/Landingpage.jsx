@@ -16,6 +16,7 @@ import eye from '../Assets/eye.svg';
 import shield from '../Assets/shield.svg';
 import caropic from '../Assets/carousel-pic.svg';
 import caroavatar from '../Assets/caro-avatar.svg';
+import Footer from "../Components/Footer/Footer";
 
 
 
@@ -178,6 +179,9 @@ const Landingpage = () => {
           <div className="youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5Peo-ivmupE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+       </section>
+       <section>
+          <Footer />
        </section>
     </div>
   )
