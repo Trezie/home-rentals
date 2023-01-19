@@ -48,7 +48,7 @@ const Landingpage = () => {
 
             </div>
        </section>
-       <section className='section2'>
+       {/* <section className='section2'>
         <h2><span>Minimum Living Cost</span> Takes Care Of Everything</h2>
         <div className='costcard-subcont' >
           <img src={costImage} alt="cost" className='costimg' />
@@ -182,7 +182,7 @@ const Landingpage = () => {
        </section>
        <section>
           <Footer />
-       </section>
+       </section> */}
     </div>
   )
 }
