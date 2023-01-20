@@ -48,10 +48,12 @@ const Landingpage = () => {
 
             </div>
        </section>
-       {/* <section className='section2'>
+       <section className='section2'>
         <h2><span>Minimum Living Cost</span> Takes Care Of Everything</h2>
         <div className='costcard-subcont' >
-          <img src={costImage} alt="cost" className='costimg' />
+          <div className='costimg'>
+            <img src={costImage} alt="cost"  />
+          </div>
           <div className='costcard-div'  >
             <div>
               <Costcard imgsrc={dollar} content={"Pay as Little as possible!"} imgalt={"dollar-icon"}/>
@@ -66,7 +68,7 @@ const Landingpage = () => {
           </div>
         </div>
        </section>
-       <section className='section3'>
+       {/*<section className='section3'>
           <div className='sect3-heading'>
             <h3><span>List</span> Of Properties</h3>
             <button>View All Property</button>

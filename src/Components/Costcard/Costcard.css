@@ -24,3 +24,9 @@
     color: #18191F;
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 450px) {
+    .card-div p{
+        width: 8rem;
+    }
+}

@@ -1,6 +1,6 @@
 .nav-container{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     border-bottom: 0.5px solid #FFFFFF;
     font-family: 'DM Sans';
@@ -30,10 +30,81 @@
     border-bottom: 1px solid #FFFFFF;
 }
 
+
+#logo{
+    padding: 1rem 0;
+}
 #logo:hover{
     border-bottom: none;
 }
 
 #home{
     border-bottom: 1px solid #FFFFFF;
+}
+
+#hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width: 826px) {
+    .nav-container li{
+        font-size: 14px;
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 675px){
+    #hamburger{
+        display: block;
+        cursor: pointer;
+        font-size: 4rem;
+    }
+    .noDropDown li{
+        display: none;
+    }
+
+    .showDropDown{
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+        background-color: #8d98c2;
+        transition: 0;
+    }
+    .showDropDown li{
+        font-size: 16px;
+    }
+
+    .showDropDown .login{
+        position: absolute;
+        top: 12rem;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        background-color: #8d98c2;
+        margin: 0;
+        font-size: 16px;
+
+    }
+
+    #home{
+        border-bottom: none;
+    }
+    .nav-container li:hover{
+        border-bottom: none;
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    
+    #hamburger{
+        font-size: 3rem;
+    }
+
+    #logo img{
+        width: 7rem;
+    }
 }

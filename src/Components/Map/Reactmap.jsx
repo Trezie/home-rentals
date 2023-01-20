@@ -5,7 +5,7 @@ import { memo } from 'react';
 
 
 const containerStyle = {
-  width: '300px',
+  width: '336px',
   height: '300px',
   borderRadius: '15px'
 };
@@ -40,7 +40,7 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={20}
+        zoom={12}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
