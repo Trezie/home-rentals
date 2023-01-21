@@ -1,4 +1,4 @@
-.pCard-container{
+.pCard-div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,5 +42,20 @@
 .paginateContainer .disabled{
     color: #BDBDBD;
     background-color: #F3F3F3;
-    ;
+}
+
+@media screen and (max-width: 640px) {
+    .pCard-div{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .paginateContainer ul{
+        width: 14rem;
+    }
+
+    .paginateContainer li{
+        padding: 0.5rem;
+    }
 }

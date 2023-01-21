@@ -145,6 +145,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center ;
 }
 
 .flex-minidiv{
@@ -354,6 +357,15 @@
     .costcard-div div{
         flex-direction: column;
     }
+
+    .section3{
+        padding: 2rem;
+    }
+
+    .section4{
+        flex-direction: column-reverse;
+        
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -364,6 +376,49 @@
     }
     .section2{
         padding: 3rem 1.5rem;
+    }
+    
+    .sect3-heading h3{
+        font-size: 28px;
+        line-height: 38px;
+        margin-right: 1rem;
+    }
+
+    .section4{
+        padding: 2rem;
+    }
+
+    .flex-div2 h4, .flex-div2 p{
+        width: auto;
+    }
+
+    .flex-subdiv1{
+        width: 170px;
+        height: 224px;
+    }
+
+    .flex-subdiv2{
+        width: 150px;
+        height: 164px;
+    }
+
+    .flex-subdiv3{
+        width: 125px;
+        height: 185px;
+    }
+
+    .flex-subdiv4{
+        width: 220px;
+        height: 250px;
+    }
+
+    .flex-minidiv p{
+        font-size: 0.75rem;
+        width: auto;
+    }
+
+    .section5{
+        padding: 2rem;
     }
 }
 
@@ -391,9 +446,84 @@
         height: 20rem;
         width: 20rem;
     }
+
+    .flex-div2{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .flex-div2 h4{
+        font-size: 28px;
+    }
+
+    .flex-div2 p{
+        font-size: 14px;
+    }
+    
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
+    .hero-section{
+        padding: 0 1rem;
+    }
 
+    .hero-section h1{
+        width: auto;
+    }
+
+    .select-div select{
+        padding: 1rem 0.5rem;
+        font-size: 10px;
+    }
+
+    .select-div button{
+        padding: 0.75rem;
+    }
+
+    .section4{
+        padding: 1rem;
+    }
+
+    .flex-div2 button{
+        font-size: 14px;
+        padding: 0.75rem 1rem;
+    }
+
+    .flex-subdiv1{
+        width: 100px;
+        height: 144px;
+    }
+
+    .flex-subdiv2{
+        width: 100px;
+        height: 104px;
+    }
+
+    .flex-subdiv3{
+        width: 105px;
+        height: 120px;
+    }
+
+    .flex-subdiv4{
+        width: 120px;
+        height: 140px;
+    }
+
+    .flex-subdiv1, .flex-subdiv2, .flex-subdiv3, .flex-subdiv4{
+        padding: 0.5rem;
+    }
+
+    .section2 h2, .sect3-heading h3, .flex-div2 h4{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .flex-div2 p{
+        font-size: 12px;
+    }
+    .section5 h5{
+        font-size: 18px;
+        line-height: 24px;
+    }
 }

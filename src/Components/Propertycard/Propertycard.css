@@ -73,3 +73,45 @@
     border-left: 1px solid #E4E4E4;
     border-right: 1px solid #E4E4E4;
 }
+
+@media screen and (max-width: 768px) {
+    .pcard-container{
+        width: 16rem;
+    }
+
+    .apptImg {
+        height: 14rem;
+    }
+
+    .pcard-content h5{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+    .pcard-container{
+        margin: 1rem ;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .pcard-content h5, #pcard-price{
+        font-size: 14px;
+    }
+
+    .pcard-content h5{
+        margin-bottom: 0.5rem;
+    }
+
+    .pcard-content p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .pcard-content h5{
+        line-height: 18px;
+    }
+}

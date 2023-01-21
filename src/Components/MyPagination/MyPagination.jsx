@@ -37,7 +37,7 @@ import cardpic6 from '../../Assets/cardpic6.svg';
 
  function Property({currentProperty}) {
     return(
-        <div className='pCard-container'>
+        <div className='pCard-div'>
             {currentProperty && currentProperty.map((item) => (
                 <Propertycard key={item.id} apptImg={item.Image} apptPrice={item.price}/>
             ))}

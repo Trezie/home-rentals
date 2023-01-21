@@ -113,3 +113,38 @@
 .btn-holder{
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+
+    .pForm-container{
+        padding: 1.5rem;
+    }
+
+    .form-flex input, .form-flex select {
+        width: 15rem;
+    }
+
+    .pForm-container button{
+        font-size: 14px;
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .pForm-container{
+        padding: 1.5rem 0.5rem;
+    }
+
+    .pForm-container h1{
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+
+    .form-flex input, .form-flex select {
+        width: 12rem;
+    }
+
+    .img-uploader{
+        padding: 1.5rem ;
+    }
+}

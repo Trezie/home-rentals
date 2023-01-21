@@ -30,3 +30,13 @@
         width: 8rem;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .card-div img{
+        width: 1rem;
+    }
+
+    .card-div p{
+        width: 5rem;
+    }
+}

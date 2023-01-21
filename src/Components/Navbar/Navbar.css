@@ -73,21 +73,23 @@
         text-align: center;
         background-color: #8d98c2;
         transition: 0;
+        z-index: 10;
     }
+    
     .showDropDown li{
         font-size: 16px;
     }
 
     .showDropDown .login{
         position: absolute;
-        top: 12rem;
+        top: 13rem;
         left: 0;
         width: 100vw;
         text-align: center;
         background-color: #8d98c2;
         margin: 0;
         font-size: 16px;
-
+        z-index: 10;
     }
 
     #home{
@@ -99,7 +101,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    
+
     #hamburger{
         font-size: 3rem;
     }
