@@ -1,5 +1,5 @@
 import './MyPagination.css';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import ReactPaginate from 'react-paginate';
 import Propertycard from '../Propertycard/Propertycard';
 import cardpic1 from '../../Assets/cardpic1.svg';
