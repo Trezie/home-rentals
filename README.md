@@ -11,7 +11,6 @@
 
 <h4>Dependencies:</h4> <h5>Google Maps, React Carousel, React Pagination, React Drop-Zone</h5>
 
-- 🌱 I’m currently learning **Javascript & Reactjs**
 
 - 👨‍💻 All of my projects are available at [https://github.com/Bolurx07/](https://github.com/Bolurx07/)
 
