@@ -25,6 +25,15 @@
     text-transform: capitalize;
 }
 
+.card-div img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-div img:hover{
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 450px) {
     .card-div p{
         width: 8rem;

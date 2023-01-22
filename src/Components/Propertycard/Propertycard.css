@@ -11,8 +11,12 @@
     cursor: pointer;
 }
 
+.apptImg img{
+    transition: 1s;
+}
+
 .apptImg img:hover{
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 .pcard-content{

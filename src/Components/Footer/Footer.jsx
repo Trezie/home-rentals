@@ -23,7 +23,7 @@ const Footer = () => {
             <img src={location} alt="location" />
             <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
           </div>
-          <div>
+          <div className="phone-no-div">
             <div id="footer-subdiv">
               <img src={phone} alt="phone" />
               <p>(123) 456-7890</p>
@@ -35,14 +35,16 @@ const Footer = () => {
           </div>
           <div id="media">
             <p>Social Media</p>
-            <img src={facebook} alt="facebook" />
-            <img src={twitter} alt="twitter" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={youtube} alt="youtube" />
-            <img src={instagram} alt="instagram" />
-            <img src={google} alt="google" />
-            <img src={pinterest} alt="pinterest" />
-            <img src={rss} alt="rss" />
+            <div>
+              <img src={facebook} alt="facebook" />
+              <img src={twitter} alt="twitter" />
+              <img src={linkedin} alt="linkedin" />
+              <img src={youtube} alt="youtube" />
+              <img src={instagram} alt="instagram" />
+              <img src={google} alt="google" />
+              <img src={pinterest} alt="pinterest" />
+              <img src={rss} alt="rss" />
+            </div>
           </div>
         </section>
       </div>

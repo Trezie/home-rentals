@@ -169,7 +169,13 @@
     border-radius: 20px;
     padding: 1rem;
     margin: 0.5rem;
+    cursor: pointer;
 }
+
+.flex-subdiv1:hover, .flex-subdiv2:hover, .flex-subdiv3:hover, .flex-subdiv4:hover{
+    transform: scale(0.9);
+}
+
 
 .flex-subdiv1{
     background-image: url('../Assets/flexbackgrnd1.svg');
@@ -258,11 +264,13 @@
 .carousel{
     width: 50vw;
     height: 30rem;
+    background-color: rgba(244, 81, 30, 0.07);
+
 }
 
 .caro-div{
     padding: 5rem 4rem 9rem 4rem;
-    background-color: rgba(244, 81, 30, 0.07);
+    /* background-color: rgba(244, 81, 30, 0.07); */
     position: relative;
 }
 
@@ -282,7 +290,7 @@
 
 .caro-content{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 26px;
     margin-bottom: 1rem;
 }
@@ -366,6 +374,15 @@
         flex-direction: column-reverse;
         
     }
+
+    .caro-div{
+        padding: 5rem 2rem 5rem 4rem;
+
+    }
+
+    .caro-content{
+        font-size: 9px;
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -420,6 +437,15 @@
     .section5{
         padding: 2rem;
     }
+
+    .section6{
+        flex-direction: column;
+    }
+
+    .carousel, .youtube iframe{
+        width: 100vw;
+        height: 27rem;
+    }
 }
 
 
@@ -460,6 +486,10 @@
         font-size: 14px;
     }
     
+    .caro-name, .caro-footer p{
+        font-size: 12px;
+    }
+
 }
 
 
@@ -522,8 +552,17 @@
     .flex-div2 p{
         font-size: 12px;
     }
+
     .section5 h5{
         font-size: 18px;
         line-height: 24px;
     }
+
+    .caro-content{
+        line-height: 20px;
+    }
+
+    .carousel .control-dots{
+    bottom: 0.5rem;
+}
 }

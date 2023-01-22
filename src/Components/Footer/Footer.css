@@ -72,3 +72,53 @@
 .copyright{
     opacity: 0.5;
 }
+
+
+@media screen and (max-width: 820px) {
+    .footer-sect2 div p, .copyright{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .footer-div{
+        flex-direction: column;
+    }
+
+    #media div, .footer-sect2{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .footer-container{
+        padding: 1rem 2rem;
+    }
+
+    .footer-sect2{
+        justify-content: center;
+    }
+
+    .footer-sect2 div{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .footer-div .phone-no-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #footer-subdiv{
+        margin-right: 0;
+    }
+    
+    .footer-sect2 div{
+        justify-content: flex-start;
+        margin: 1rem auto;
+    }
+}
