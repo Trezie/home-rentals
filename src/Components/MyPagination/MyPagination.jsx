@@ -45,18 +45,6 @@ import cardpic6 from '../../Assets/cardpic6.svg';
     )
  };
 
-// function Items({ currentItems }) {
-//   return (
-//     <>
-//       {currentItems &&
-//         currentItems.map((item) => (
-//           <div>
-//             <h3>Item #{item}</h3>
-//           </div>
-//         ))}
-//     </>
-//   );
-// }
 
 function MyPagination({ itemsPerPage }) {
   // Here we use item offsets; we could also use page offsets
