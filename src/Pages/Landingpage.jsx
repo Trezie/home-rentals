@@ -34,7 +34,7 @@ const Landingpage = () => {
                 The Most Affortable Place To Stay In The San Franciso Bay Area
               </h1>
               <div className='mapcontainer'>
-                <MyComponent />
+                {/* <MyComponent /> */}
                 <div className='select-div'>
                   <select name="alltypes" id='alltypes'>
                     <option defaultValue="alltypes">All Types</option>
