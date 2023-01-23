@@ -7,7 +7,7 @@ const Propertyform = () => {
   return (
     <div className='pForm-container'>
         <h1>Add A New Property</h1>
-        <form action="" method="post">
+        <form>
             <section className='form-flex'>
                 <div>
                     <label htmlFor="name">Name<span>*</span></label>
