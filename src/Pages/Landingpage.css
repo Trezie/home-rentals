@@ -496,6 +496,7 @@
 @media screen and (max-width: 375px) {
     .hero-section{
         padding: 0 1rem;
+        height: auto;
     }
 
     .hero-section h1{

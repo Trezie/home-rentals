@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+.paginateContainer li:hover{
+    background-color: white;
+}
+
 .paginateContainer .next{
     border-right: none;
 }
@@ -34,6 +38,12 @@
 }
 
 .paginateContainer .selected{
+    color: white;
+    background-color: #F4511E;
+    border-color: #F4511E ;
+}
+
+.paginateContainer .selected:hover{
     color: white;
     background-color: #F4511E;
     border-color: #F4511E ;
