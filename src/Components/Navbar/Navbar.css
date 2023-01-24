@@ -60,10 +60,15 @@
         cursor: pointer;
         font-size: 4rem;
     }
+
+    .noDropDown{
+    }
+    
     .noDropDown li{
+        transition: 1s;
         display: none;
     }
-
+    
     .showDropDown{
         position: absolute;
         top: 5rem;
@@ -72,14 +77,14 @@
         width: 100vw;
         text-align: center;
         background-color: #8d98c2;
-        transition: 0;
+        transition: 1s;
         z-index: 10;
     }
     
     .showDropDown li{
         font-size: 16px;
     }
-
+    
     .showDropDown .login{
         position: absolute;
         top: 13rem;
@@ -90,6 +95,8 @@
         margin: 0;
         font-size: 16px;
         z-index: 10;
+        transition: 1s;
+
     }
 
     #home{
