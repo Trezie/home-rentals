@@ -37,12 +37,16 @@ const Landingpage = () => {
                 <MyComponent />
                 <div className='select-div'>
                   <select name="alltypes" id='alltypes'>
-                    <option defaultValue="alltypes">All Types</option>
+                    <option value="alltypes">All Types</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
                   </select>
                   <select name="neighborhoods">
-                    <option defaultValue="neighborhood">Neighborhood</option>
+                    <option value="neighborhood">Neighborhood</option>
                   </select>
                   <button><img src={searchicon} alt="searchicon" /></button>
+                  
                 </div>
               </div>
 

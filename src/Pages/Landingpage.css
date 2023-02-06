@@ -29,30 +29,33 @@
 .select-div{
     display: flex;
     align-items: center;
+
     padding: 0.5rem;
     border: 1px solid #E6E6E6;
     border-radius: 5px;
     background-color: #ffffff;
     margin-top: 1rem;
+    width: 100%;
 
 }
 
 .select-div select{
     background-color: #E6E6E6;
-    padding: 1.15rem;
+    padding: 0.35rem;
     font-weight: 500;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 8px;
     border: 1px solid #E6E6E6;
     
 }
 
 #alltypes{
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
 .select-div button{
-    padding: 1rem;
+    padding: 0.15rem;
     background-color: #23A6F0;
     border-radius: 0px 5px 5px 0px;
     border: 1px solid #23A6F0;
@@ -89,10 +92,12 @@
 
 .costcard-subcont{
     justify-content: space-evenly;
+
 }
 
 .costimg img{
     height: 33rem;
+
 }
 
 .costcard-div{
